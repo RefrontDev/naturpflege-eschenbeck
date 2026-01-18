@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  /* Nature Palette */
+  --background: #F9F9F5;
+  /* Off-white / Eggshell */
+  --foreground: #1C2D27;
+  /* Dark Jungle Green for text */
+
+  --primary: #2F5233;
+  /* Deep Nature Green */
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #B19470;
+  /* Warm Earth / Wood */
+  --secondary-foreground: #FFFFFF;
+
+  --accent: #A5B864;
+  /* Fresh Green / Bud */
+  --accent-foreground: #1C2D27;
+
+  --font-montserrat: var(--font-montserrat);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --font-sans: var(--font-montserrat);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-montserrat), sans-serif;
+}
