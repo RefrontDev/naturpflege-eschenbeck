@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function AboutPage() {
   return (
-    <div className="flex flex-col pb-24">
+    <div className="flex flex-col pb-24 overflow-x-hidden">
       {/* Page Header */}
       <div className="bg-primary/5 py-16 sm:py-24">
         <Container className="text-center">
@@ -101,8 +101,8 @@ export default function AboutPage() {
               >
                 <Quote className="mx-auto h-12 w-12 text-secondary mb-6" />
               </motion.div>
-              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-8">
-                Unternehmensphilosophie
+              <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl mb-8 break-words hyphens-auto">
+                Unternehmens&shy;philosophie
               </h2>
             </AnimatedSection>
             <AnimatedSection delay={0.1}>
@@ -140,12 +140,14 @@ export default function AboutPage() {
         </Container>
       </section>
 
-      <AnimatedSection className="mt-16 text-center">
-        <h3 className="text-2xl font-bold text-foreground mb-6">Sie haben ein Projekt für uns?</h3>
-        <Button size="lg" asChild>
-          <Link href="/kontakt">Jetzt Kontakt aufnehmen</Link>
-        </Button>
-      </AnimatedSection>
+      <Container>
+        <AnimatedSection className="mt-16 text-center">
+          <h3 className="text-2xl font-bold text-foreground mb-6">Sie haben ein Projekt für uns?</h3>
+          <Button size="lg" asChild>
+            <Link href="/kontakt">Jetzt Kontakt aufnehmen</Link>
+          </Button>
+        </AnimatedSection>
+      </Container>
     </div>
   );
 }

@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-primary/5 pt-20 pb-16 lg:pt-32 lg:pb-24">
         {/* Green gradient background overlay */}

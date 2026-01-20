@@ -78,7 +78,7 @@ export default function GaleriePage() {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col pb-24 min-h-screen">
+    <div className="flex flex-col pb-24 min-h-screen overflow-x-hidden">
       {/* Header */}
       <div className="bg-primary/5 py-24">
         <Container className="text-center">

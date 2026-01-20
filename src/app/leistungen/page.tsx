@@ -9,7 +9,7 @@ import { motion } from "framer-motion";
 
 export default function ServicesPage() {
   return (
-    <div className="flex flex-col pb-24">
+    <div className="flex flex-col pb-24 overflow-x-hidden">
       {/* Header */}
       <div className="bg-primary/5 py-16 sm:py-24">
         <Container className="text-center">
