@@ -80,7 +80,7 @@ export default function GaleriePage() {
   return (
     <div className="flex flex-col pb-24 min-h-screen overflow-x-hidden">
       {/* Header */}
-      <div className="bg-primary/5 py-24">
+      <div className="bg-primary/5 py-16 lg:py-24">
         <Container className="text-center">
           <motion.h1
             className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl"
@@ -101,10 +101,10 @@ export default function GaleriePage() {
         </Container>
       </div>
 
-      <Container className="mt-16">
+      <Container className="mt-12 lg:mt-16">
         {/* Classic Grid */}
         <motion.div
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-16"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8 lg:gap-y-16"
           variants={containerVariants}
           initial="hidden"
           animate="visible"

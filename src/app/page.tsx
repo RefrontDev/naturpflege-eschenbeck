@@ -13,13 +13,13 @@ export default function Home() {
   return (
     <div className="flex flex-col overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-primary/5 pt-20 pb-16 lg:pt-32 lg:pb-24">
+      <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-primary/5 pt-16 pb-12 lg:pt-32 lg:pb-24">
         {/* Green gradient background overlay */}
         <div className="absolute inset-0 z-0 bg-gradient-to-br from-primary/20 via-background to-secondary/20" />
 
         <Container className="relative z-10 text-center">
           <motion.h1
-            className="mx-auto max-w-4xl text-4xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl"
+            className="mx-auto max-w-4xl text-3xl font-extrabold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
@@ -35,7 +35,7 @@ export default function Home() {
             </motion.span>
           </motion.h1>
           <motion.p
-            className="mx-auto mt-6 max-w-2xl text-lg text-muted-foreground sm:text-xl leading-relaxed"
+            className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-xl leading-relaxed"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
@@ -44,7 +44,7 @@ export default function Home() {
             Spezialisiert auf schonende Handarbeit für Natur und Kulturlandschaft.
           </motion.p>
           <motion.div
-            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
+            className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
@@ -59,7 +59,7 @@ export default function Home() {
 
           {/* Trust Badges / Stats */}
           <motion.div
-            className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-4"
+            className="mt-12 grid grid-cols-2 gap-6 md:grid-cols-4"
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
@@ -87,9 +87,9 @@ export default function Home() {
       </section>
 
       {/* Intro Section */}
-      <section className="py-24 bg-background">
+      <section className="py-12 lg:py-24 bg-background">
         <Container>
-          <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
+          <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-center">
             <AnimatedSection direction="left" className="relative aspect-square overflow-hidden rounded-2xl bg-muted/50">
               {/* Placeholder for Profile Picture */}
               <div className="absolute inset-0 flex items-center justify-center text-muted-foreground">
@@ -128,7 +128,7 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="py-24 bg-muted/30">
+      <section className="py-12 lg:py-24 bg-muted/30">
         <Container>
           <AnimatedSection className="mx-auto max-w-2xl text-center mb-16">
             <h2 className="text-3xl font-bold tracking-tight text-foreground sm:text-4xl">Unsere Leistungen</h2>
@@ -137,7 +137,7 @@ export default function Home() {
             </p>
           </AnimatedSection>
 
-          <StaggerContainer className="grid gap-8 md:grid-cols-2 lg:grid-cols-3" staggerDelay={0.15}>
+          <StaggerContainer className="grid gap-6 md:grid-cols-2 lg:grid-cols-3" staggerDelay={0.15}>
             <StaggerItem>
               <ServiceCard
                 title="Streuobstpflege"
@@ -173,7 +173,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-primary text-primary-foreground overflow-hidden">
+      <section className="py-12 lg:py-24 bg-primary text-primary-foreground overflow-hidden">
         <Container className="text-center">
           <AnimatedSection>
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl mb-6">

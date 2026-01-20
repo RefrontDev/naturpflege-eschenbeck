@@ -11,10 +11,10 @@ export default function ServicesPage() {
   return (
     <div className="flex flex-col pb-24 overflow-x-hidden">
       {/* Header */}
-      <div className="bg-primary/5 py-16 sm:py-24">
+      <div className="bg-primary/5 py-12 sm:py-24">
         <Container className="text-center">
           <motion.h1
-            className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl"
+            className="text-3xl font-bold tracking-tight text-foreground sm:text-5xl"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
@@ -32,7 +32,7 @@ export default function ServicesPage() {
         </Container>
       </div>
 
-      <Container className="mt-16 space-y-24">
+      <Container className="mt-12 space-y-16 lg:space-y-24">
         {/* Category: Streuobst */}
         <section id="streuobst" className="scroll-mt-24">
           <AnimatedSection>
@@ -40,7 +40,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold tracking-tight text-foreground text-primary">Streuobstbestände</h2>
             </div>
           </AnimatedSection>
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
             <AnimatedSection direction="left">
               <div className="rounded-2xl border bg-card p-8 shadow-sm h-full">
                 <p className="text-lg text-muted-foreground mb-6">
@@ -85,7 +85,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold tracking-tight text-foreground text-primary">Landschaftspflege & Naturschutz</h2>
             </div>
           </AnimatedSection>
-          <div className="grid gap-8 lg:grid-cols-2">
+          <div className="grid gap-6 lg:grid-cols-2 lg:gap-8">
             <AnimatedSection direction="left" className="order-2 lg:order-1">
               <div className="relative aspect-video rounded-2xl bg-muted/50 overflow-hidden flex items-center justify-center h-full">
                 <span className="text-muted-foreground font-medium">[Bild: Landschaftspflege Arbeit]</span>
@@ -129,7 +129,7 @@ export default function ServicesPage() {
               <h2 className="text-3xl font-bold tracking-tight text-foreground text-primary">Spezialleistungen & Bau</h2>
             </div>
           </AnimatedSection>
-          <StaggerContainer className="grid gap-8 lg:grid-cols-3" staggerDelay={0.15}>
+          <StaggerContainer className="grid gap-6 lg:grid-cols-3 lg:gap-8" staggerDelay={0.15}>
             <StaggerItem>
               <motion.div
                 className="rounded-xl border bg-card p-6 shadow-sm h-full"
@@ -177,7 +177,7 @@ export default function ServicesPage() {
         </section>
       </Container>
 
-      <AnimatedSection delay={0.2} className="mt-24 text-center">
+      <AnimatedSection delay={0.2} className="mt-16 lg:mt-24 text-center">
         <Button size="lg" className="h-14 px-8 text-lg" asChild>
           <Link href="/kontakt">Individuelles Angebot anfordern</Link>
         </Button>

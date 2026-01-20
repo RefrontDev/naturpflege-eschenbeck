@@ -22,7 +22,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 20);
+      setScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -39,11 +39,11 @@ export default function Header() {
       transition={{ duration: 0.3 }}
     >
       <Container>
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-16 lg:h-20 items-center justify-between">
           <div className="flex lg:flex-1">
             <Link href="/" className="-m-1.5 p-1.5 flex items-center gap-2">
               <motion.div
-                className="relative h-12 w-auto aspect-[3/1]"
+                className="relative h-10 lg:h-12 w-auto aspect-[3/1]"
                 whileHover={{ scale: 1.02 }}
                 transition={{ type: "spring", stiffness: 400, damping: 10 }}
               >
@@ -60,6 +60,7 @@ export default function Header() {
           <div className="flex lg:hidden">
             <Button
               variant="ghost"
+              size="icon"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-foreground"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -100,13 +101,13 @@ export default function Header() {
       <AnimatePresence>
         {mobileMenuOpen && (
           <motion.div
-            className="lg:hidden absolute top-20 left-0 w-full bg-background border-b shadow-lg z-50 overflow-hidden"
+            className="lg:hidden absolute top-16 left-0 w-full bg-background border-b shadow-lg z-50 overflow-hidden"
             initial={{ height: 0, opacity: 0 }}
             animate={{ height: "auto", opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
-            <div className="space-y-1 px-4 pb-3 pt-2">
+            <div className="space-y-1 px-4 pb-6 pt-4">
               {navigation.map((item, index) => (
                 <motion.div
                   key={item.name}
@@ -116,7 +117,7 @@ export default function Header() {
                 >
                   <Link
                     href={item.href}
-                    className="block rounded-md px-3 py-2 text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
+                    className="block rounded-md px-3 py-3 text-base font-medium text-foreground hover:bg-accent hover:text-accent-foreground transition-colors"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
@@ -124,12 +125,12 @@ export default function Header() {
                 </motion.div>
               ))}
               <motion.div
-                className="mt-4 pb-4"
+                className="mt-6"
                 initial={{ opacity: 0, y: 10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: navigation.length * 0.05 }}
               >
-                <Button className="w-full" asChild onClick={() => setMobileMenuOpen(false)}>
+                <Button className="w-full h-12 text-lg" asChild onClick={() => setMobileMenuOpen(false)}>
                   <Link href="/kontakt">Angebot anfragen</Link>
                 </Button>
               </motion.div>

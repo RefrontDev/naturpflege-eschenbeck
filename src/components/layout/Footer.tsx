@@ -34,7 +34,7 @@ export default function Footer() {
 
   return (
     <footer ref={ref} className="bg-muted mt-auto border-t">
-      <Container className="py-12 md:py-16">
+      <Container className="py-8 md:py-16">
         <motion.div
           className="xl:grid xl:grid-cols-3 xl:gap-8"
           variants={containerVariants}

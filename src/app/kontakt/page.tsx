@@ -17,7 +17,7 @@ export default function KontaktPage() {
   return (
     <div className="flex flex-col pb-24 overflow-x-hidden">
       {/* Header */}
-      <div className="bg-primary/5 py-16 sm:py-24">
+      <div className="bg-primary/5 py-12 sm:py-24">
         <Container className="text-center">
           <motion.h1
             className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl"
@@ -38,8 +38,8 @@ export default function KontaktPage() {
         </Container>
       </div>
 
-      <Container className="mt-16 sm:mt-24">
-        <div className="grid lg:grid-cols-2 gap-16">
+      <Container className="mt-12 sm:mt-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
           {/* Contact Form */}
           <AnimatedSection direction="left">
             <div className="rounded-2xl border bg-card p-8 shadow-sm">

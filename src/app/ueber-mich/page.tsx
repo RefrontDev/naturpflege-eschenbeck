@@ -11,7 +11,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col pb-24 overflow-x-hidden">
       {/* Page Header */}
-      <div className="bg-primary/5 py-16 sm:py-24">
+      <div className="bg-primary/5 py-12 sm:py-24">
         <Container className="text-center">
           <motion.h1
             className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl"
@@ -32,8 +32,8 @@ export default function AboutPage() {
         </Container>
       </div>
 
-      <Container className="mt-16 sm:mt-24">
-        <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-start">
+      <Container className="mt-12 sm:mt-24">
+        <div className="grid gap-8 lg:grid-cols-2 lg:gap-16 items-start">
           {/* Text Content */}
           <AnimatedSection direction="left">
             <div className="space-y-6 text-lg text-muted-foreground">
@@ -89,7 +89,7 @@ export default function AboutPage() {
       </Container>
 
       {/* Philosophy Section */}
-      <section className="mt-24 bg-secondary/10 py-24 overflow-hidden">
+      <section className="mt-16 lg:mt-24 bg-secondary/10 py-16 lg:py-24 overflow-hidden">
         <Container>
           <div className="mx-auto max-w-4xl text-center">
             <AnimatedSection>
@@ -110,7 +110,7 @@ export default function AboutPage() {
                 &quot;Wir pflegen, was gewachsen ist - mit Hand und Verstand.&quot;
               </blockquote>
             </AnimatedSection>
-            <StaggerContainer className="grid gap-8 sm:grid-cols-2 text-left mt-16" staggerDelay={0.15}>
+            <StaggerContainer className="grid gap-6 sm:grid-cols-2 text-left mt-12 lg:mt-16" staggerDelay={0.15}>
               <StaggerItem>
                 <motion.div
                   className="rounded-xl bg-background p-8 shadow-sm h-full"
