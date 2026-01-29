@@ -85,7 +85,7 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl bg-muted/50">
               <Image
                 src="/markus-eschenbeck-ueber-mich.webp"
-                alt="Markus Eschenbeck"
+                alt="Markus Eschenbeck - Inhaber von Naturpflege Eschenbeck bei der Arbeit in der Natur"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"

@@ -93,7 +93,7 @@ export default function Home() {
             <AnimatedSection direction="left" className="relative aspect-square overflow-hidden rounded-2xl bg-muted/50">
               <Image
                 src="/markus-eschenbeck-naturpflege.webp"
-                alt="Markus Eschenbeck auf dem Hof"
+                alt="Markus Eschenbeck von Naturpflege Eschenbeck - Fachgerechte Landschaftspflege und Baumpflege im Altmühltal"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
